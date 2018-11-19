@@ -1,0 +1,24 @@
+<mat-sidenav-container class="app-sidenav-container">
+  <!-- !isScreenSmall() -->
+  <mat-sidenav #sidenav class="app-sidenav " [opened]="!isScreenSmall()" [mode]="isScreenSmall() ? 'over' : 'side'">
+
+    <div fxLayout="column" fxLayoutAlign="center center" style="background-image: url('../assets/images/header-profile.png')"
+      fxLayoutGap="10px">
+      <a mat-button routerLinkActive="active" class="MoHdn">
+        <div fxFlex fxFlexAlign="center" style="padding-top:10%;">
+         
+        </div>
+      </a>
+      <div fxFlex style="padding-bottom:8%;">
+        <span>Admin</span>
+      </div>
+    </div>
+  </mat-sidenav> 
+
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+
